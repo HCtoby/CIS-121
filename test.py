@@ -1,4 +1,6 @@
-age = int(input("How old are you?"))
-name = str(input("What's your name?"))
-lastname = str(input("What's your lastname?"))
-print("Hi", name, lastname, ", you're", age, "years old, awesome!") 
+human_age = float(input("Please enter your age: "))
+dog_age = human_age * 7
+dogs_age = (float(dog_age) - int(dog_age)) * 12
+dog_ages = (float(dogs_age) - int(dogs_age)) * 30
+print("An age",human_age, "human should be", int(dog_age), "years", int(dogs_age), "mongths, and", int(dog_ages), "days in dog age.")
+print(dogs_age)
