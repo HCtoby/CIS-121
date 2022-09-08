@@ -25,4 +25,4 @@ while status != 1:
         print("According to our tex rate, sence you are", marrystatus, "marry status, you should to pay", tex, "as your tex.")
         status = 1
     else:
-        print("You have to and only can type m or s!")
+        print("You have to and only can type 'm' or 's'!")
