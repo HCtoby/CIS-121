@@ -18,6 +18,8 @@ if marrystatus == "m":
         tex = income / 100 * 12
     elif income <= 172750:
         tex = income / 100 * 22
+    else:
+        tex = income
 elif marrystatus == "s":
     if income <= 9950:
         tex = income / 10
@@ -25,6 +27,8 @@ elif marrystatus == "s":
         tex = income / 100 * 12
     elif income <= 86375:
         tex = income / 100 * 22
+    else:
+        tex = income
 
 
 print("According to our tex rate, sence you are", marrystatus, "marry status, you should to pay", tex, "as your tex.")
