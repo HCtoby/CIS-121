@@ -8,7 +8,7 @@ print("Are you are married or single?")
 
 while marrystatus != "m" and marrystatus != "s":
     marrystatus = str(input("Enter m for married and s for single :"))
-    print("You have to and only can type m or s.")
+    print("You have to and only can type 'm' or 's'!")
 
 
 if marrystatus == "m":
