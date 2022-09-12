@@ -14,21 +14,38 @@ while marrystatus != "m" and marrystatus != "s":
 if marrystatus == "m":
     if income <= 19900:
         tex = income / 10
+        earned = income - tex
+
     elif income <= 81050:
         tex = income / 100 * 12
+        earned = income - tex
+
     elif income <= 172750:
         tex = income / 100 * 22
+        earned = income - tex
+
     else:
         tex = income
-elif marrystatus == "s":
+        earned = income - tex
+
+elif marrystatus == "s":    
     if income <= 9950:
         tex = income / 10
+        earned = income - tex
+
     elif income <= 40525:
         tex = income / 100 * 12
+        earned = income - tex
+
     elif income <= 86375:
         tex = income / 100 * 22
+        earned = income - tex
+
     else:
         tex = income
+        earned = income - tex
 
 
-print("According to our tex rate, sence you are", marrystatus, "marry status, you should to pay", tex, "as your tex.")
+earned = income - tex
+
+print("According to our tex rate, sence you are", marrystatus, "marry status, you should to pay", tex, "as your tex.", "This year you earned", earned, "without tex.")

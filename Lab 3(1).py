@@ -26,7 +26,8 @@ while status != 1:
                 tex = income / 100 * 22
             else:
                 tex = income
-        print("According to our tex rate, sence you are", marrystatus, "marry status, you should to pay", tex, "as your tex.")
+        earned = income - tex
+        print("According to our tex rate, sence you are", marrystatus, "marry status, you should to pay", tex, "as your tex.", "This year you earned", earned, "without tex.")
         status = 1
     else:
         print("You have to and only can type 'm' or 's'!")
