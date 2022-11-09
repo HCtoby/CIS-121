@@ -33,7 +33,7 @@ class CommissionEmployee(Employee):
 
     def culculate_payroll2(self):
         return self.payroll * 8 * 5
-        
+
     def displayInfo(self):
         print("===Info===")
         print(f"ID: {self.ID}")
@@ -54,7 +54,7 @@ class SalaryEmployee(HourlyEmployee):
         print(f"ID: {self.ID}")
         print(f"Name: {self.name}")
         print(f"Payroll: {self.culculate_payroll3()}")
-        print(" ")        
+        print(" ")
 
 Bob = Employee(123456,"Bob")
 Bob.displayInfo()
